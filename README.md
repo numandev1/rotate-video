@@ -1,7 +1,7 @@
 <p align="center">
-<img src="/media/logo.png" alt="alt text" width="150"/>
+<img src="https://github.com/numandev1/rotate-video/raw/master/media/logo.png" alt="alt text" width="150"/>
 </p>
-<h1 align="center">Rotate an entire directory of videos with FFMPEG</h1>
+<h1 align="center">Rotate Single video / Entire directory of videos with FFMPEG</h1>
 
 ### Would you like to support me?
 
@@ -13,34 +13,35 @@
 </br>
 <a href="https://www.buymeacoffee.com/numan.dev" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 </div>
-
 ## Prerequisite
 
-install ffmpeg cli first
+install [ffmpeg](https://ffmpeg.org/) cli first
 
 | Platform | Command                     |
 | -------- | --------------------------- |
 | Macbook  | brew install ffmpeg         |
 | Ubuntu   | sudo apt-get install ffmpeg |
 
+## Installation
+
 ### using npx
 
 ```sh
-npx rotate-video-dir --source=source_path --destination=destination_path --extension=MP4 --angel=270
+npx rotate-video --source=source_path --destination=destination_path --extension=MP4 --angel=270
 ```
 
 ### using npm
 
 ```sh
-npm i -g rotate-video-dir
+npm i -g rotate-video
 ```
 
 ```sh
-rotate-video-dir --source=source_path --destination=destination_dir_path --extension=MP4 --angel=270
+rotate-video --source=source_path --destination=destination_dir_path --extension=MP4 --angel=270
 
 # or you can write blow command
 
-rvd --source=source_path --destination=destination_path --extension=MP4 --angel=270
+rv --source=source_path --destination=destination_path --extension=MP4 --angel=270
 ```
 
 # Example
@@ -48,18 +49,18 @@ rvd --source=source_path --destination=destination_path --extension=MP4 --angel=
 **For Multiple Videos** below command will Rotate an entire directory of videos
 
 ```js
-rotate-video-dir --source=/Users/apple/sourceVideoDir --destination=/Users/apple/destinationVideoDir --extension=MP4 --angel=270
+rotate-video --source=/Users/apple/sourceVideoDir --destination=/Users/apple/destinationVideoDir --extension=MP4 --angel=270
 ```
 
 **For Single Video** below command will Rotate an videos
 
 ```
-rotate-video-dir --source=/Users/apple/sourceVideo --destination=/Users/apple/destinationVideoDir --extension=MP4 --angel=270
+rotate-video --source=/Users/apple/sourceVideo --destination=/Users/apple/destinationVideoDir --extension=MP4 --angel=270
 ```
 
 ### Contributing
 
-If you'd like to contribute something, please check out our [contributing guide](https://github.com/numandev1/rotate-video-dir/blob/master/contributing.md 'contributing guide')!
+If you'd like to contribute something, please check out our [contributing guide](https://github.com/numandev1/rotate-video/blob/master/contributing.md 'contributing guide')!
 
 <!-- Footer -->
 

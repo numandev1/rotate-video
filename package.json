@@ -1,22 +1,22 @@
 {
-	"name": "rotate-video-dir",
-	"version": "0.0.1",
-	"displayName": "Rotate an entire directory of videos with ffmpeg",
-	"description": "Rotate an entire directory of videos with ffmpeg",
+	"name": "rotate-video",
+	"version": "0.0.3",
+	"displayName": "Rotate single video or entire directory of videos with ffmpeg",
+	"description": "Rotate single video or entire directory of videos with ffmpeg",
 	"type": "module",
 	"bin": {
-		"rotate-video-dir": "./dist/index.js",
-		"rvd": "./dist/index.js"
+		"rotate-video": "./dist/index.js",
+		"rv": "./dist/index.js"
 	},
 	"author": "Muhammad Numan <muhammadnuman70@gmail.com> (https://github.com/numandev1)",
 	"license": "MIT",
-	"homepage": "https://github.com/numandev1/rotate-video-dir",
+	"homepage": "https://github.com/numandev1/rotate-video",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/numandev1/rotate-video-dir.git"
+		"url": "https://github.com/numandev1/rotate-video.git"
 	},
 	"bugs": {
-		"url": "https://github.com/numandev1/rotate-video-dir/issues"
+		"url": "https://github.com/numandev1/rotate-video/issues"
 	},
 	"engines": {
 		"node": ">=14.16"
