@@ -1,0 +1,73 @@
+{
+	"name": "rotate-video-dir",
+	"version": "0.0.1",
+	"displayName": "Rotate an entire directory of videos with ffmpeg",
+	"description": "Rotate an entire directory of videos with ffmpeg",
+	"type": "module",
+	"bin": {
+		"rotate-video-dir": "./dist/index.js",
+		"rvd": "./dist/index.js"
+	},
+	"author": "Muhammad Numan <muhammadnuman70@gmail.com> (https://github.com/numandev1)",
+	"license": "MIT",
+	"homepage": "https://github.com/numandev1/rotate-video-dir",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/numandev1/rotate-video-dir.git"
+	},
+	"bugs": {
+		"url": "https://github.com/numandev1/rotate-video-dir/issues"
+	},
+	"engines": {
+		"node": ">=14.16"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --format esm --clean --minify --metafile",
+		"dev": "tsup src/index.ts --format esm --watch --clean --onSuccess \"node dist/index.js\"",
+		"test": "vitest",
+		"prepare": "husky install",
+		"changeset": "changeset",
+		"release": "changeset publish"
+	},
+	"dependencies": {
+		"chalk": "^5.1.2",
+		"figlet": "^1.5.2",
+		"ora": "^6.1.2",
+		"process.argv": "^0.6.0",
+		"shelljs": "^0.8.5",
+		"walk-sync": "^3.0.0"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.25.1",
+		"@commitlint/cli": "^17.1.2",
+		"@commitlint/config-conventional": "^17.1.0",
+		"@trivago/prettier-plugin-sort-imports": "^3.4.0",
+		"@types/figlet": "^1.5.5",
+		"@types/node": "^18.11.8",
+		"@types/shelljs": "^0.8.11",
+		"@typescript-eslint/eslint-plugin": "^5.41.0",
+		"@typescript-eslint/parser": "^5.41.0",
+		"eslint": "^8.26.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1",
+		"tsup": "^6.3.0",
+		"type-fest": "^3.1.0",
+		"typescript": "^4.8.4",
+		"vitest": "^0.24.3"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"eslint --fix",
+			"prettier --write"
+		],
+		"*.{md,mdx,yml,json}": [
+			"prettier --write"
+		]
+	}
+}
